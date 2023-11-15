@@ -1,0 +1,121 @@
+
+C:\Users\`hello>cd C:\Users\`hello\Desktop
+
+C:\Users\`hello\Desktop>git add leo.jpg
+
+C:\Users\`hello\Desktop>git commit "my first commit"
+error: pathspec 'my first commit' did not match any file(s) known to git
+
+C:\Users\`hello\Desktop>git commit "first commit"
+error: pathspec 'first commit' did not match any file(s) known to git
+
+C:\Users\`hello\Desktop>git commit -m "first commit"
+[main 94cef61] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/leo.jpg
+
+C:\Users\`hello\Desktop>git branch -M main
+
+C:\Users\`hello\Desktop>git remote add origin https://github.com/Annamalai-04/mywebpage/tree/main/Desktop
+error: remote origin already exists.
+
+C:\Users\`hello\Desktop>git remote add https://github.com/Annamalai-04/mywebpage/tree/main/Desktop
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\`hello\Desktop>git remote add -m https://github.com/Annamalai-04/mywebpage/tree/main/Desktop
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\`hello\Desktop>git remote add --master origin https://github.com/Annamalai-04/mywebpage/tree/main/Desktop
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\`hello\Desktop>git remote add [--master] origin https://github.com/Annamalai-04/mywebpage/tree/main/Desktop
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\`hello\Desktop> git remote -v
+origin  https://github.com/Annamalai-04/mywebpage.git (fetch)
+origin  https://github.com/Annamalai-04/mywebpage.git (push)
+
+C:\Users\`hello\Desktop>git push -f -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Annamalai-04/mywebpage.git'
+
+C:\Users\`hello\Desktop>git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Annamalai-04/mywebpage.git'
+
+C:\Users\`hello\Desktop>git push -u -f origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Annamalai-04/mywebpage.git'
+
+C:\Users\`hello\Desktop>git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 242.85 KiB | 34.69 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Annamalai-04/mywebpage.git
+   f15cb9f..94cef61  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\`hello\Desktop>git add htmlstrc.jpg
+
+C:\Users\`hello\Desktop>git commit -m "first commit"
+[main 8d345ca] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/htmlstrc.jpg
+
+C:\Users\`hello\Desktop>git branch -M main
+
+C:\Users\`hello\Desktop> git remote -v
+origin  https://github.com/Annamalai-04/mywebpage.git (fetch)
+origin  https://github.com/Annamalai-04/mywebpage.git (push)
+
+C:\Users\`hello\Desktop>git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 14.81 KiB | 14.81 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Annamalai-04/mywebpage.git
+   94cef61..8d345ca  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\`hello\Desktop>
