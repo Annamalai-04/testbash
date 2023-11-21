@@ -1,0 +1,12 @@
+body{
+ background: fuchsia url('pic.png') no-repeat fixed top right;
+    
+    
+    
+}
+div{
+    width: 70%;
+    height: 500px;
+    background-color: aqua;
+    background: palegreen url('pic2.png') no-repeat fixed top left;
+}
